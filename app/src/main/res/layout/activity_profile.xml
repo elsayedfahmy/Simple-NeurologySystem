@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahmoudashraf.neurologysystem.Activites.profile">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+   >
+    <EditText
+        android:id="@+id/mUserName"
+        android:layout_width="319dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="32dp"
+        android:background="@drawable/editext_style2"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/mAge"
+        android:layout_width="319dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Age"
+        android:inputType="number|numberSigned"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="148dp"
+        android:background="@drawable/editext_style2"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/mCountry"
+        android:layout_width="320dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="text|textAutoCorrect"
+        android:hint="Country"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="92dp"
+        android:background="@drawable/editext_style2"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/mGender"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Gender"
+        android:inputType="text|textAutoCorrect"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="198dp"
+        android:background="@drawable/editext_style2"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/mSocial"
+        android:layout_width="317dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Social Status"
+        android:inputType="text|textAutoCorrect"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="255dp"
+        android:background="@drawable/editext_style2"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/mTallness"
+        android:layout_width="317dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Tallness"
+        android:inputType="text|textAutoCorrect"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="317dp"
+        android:background="@drawable/editext_style2"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/mPatientSymptoms"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="PatientSymptoms"
+        android:inputType="text|textAutoCorrect"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="317dp"
+        android:background="@drawable/editext_style2"
+        android:layout_margin="10dp"
+        />
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <Button
+            android:id="@+id/mEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Edit Profile"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:background="@drawable/button_shape"
+            android:layout_margin="10dp"
+            android:onClick="Edit_Profile"/>
+
+
+        <Button
+            android:id="@+id/msaveProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Save Profile"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:onClick="Save"/>
+        <Button
+            android:id="@+id/mCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Cancel"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

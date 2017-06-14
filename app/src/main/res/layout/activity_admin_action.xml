@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahmoudashraf.neurologysystem.Activites.Admin_action">
+   <ScrollView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="disease"
+            android:textSize="23dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/diseases_spinner">
+
+        </Spinner>
+
+    </LinearLayout>
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="New Facts"
+    android:textSize="20dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="30dp"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/fact"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/editext_style2"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="New Fact"
+            android:inputType="text"
+            android:textAlignment="center" />
+        <Button
+            android:text="+"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_more"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:background="@drawable/button_shape"
+            android:textSize="20sp"
+            android:onClick="more"
+            />
+</LinearLayout>
+        <Button
+            android:text="ADD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_add"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:background="@drawable/button_shape"
+            android:textSize="24sp"
+            android:onClick="add"
+            />
+
+
+    </LinearLayout>
+   </ScrollView>
+</android.support.constraint.ConstraintLayout>

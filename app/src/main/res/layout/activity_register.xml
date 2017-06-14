@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahmoudashraf.neurologysystem.Activites.Register">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/mUserName"
+        android:background="@drawable/editext_style2"
+        android:hint="User Name"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/mUserName"
+        android:layout_alignLeft="@+id/mUserName"
+        android:layout_alignStart="@+id/mUserName"
+        android:layout_marginTop="18dp"
+        android:id="@+id/mPassword"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Password"
+        android:textAlignment="center"
+        android:background="@drawable/editext_style2"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/mPassword"
+        android:layout_alignRight="@+id/mPassword"
+        android:layout_alignEnd="@+id/mPassword"
+        android:layout_marginTop="20dp"
+        android:id="@+id/mConfirm"
+        android:hint="Confirm Password"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/editext_style2"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/mConfirm"
+        android:layout_alignRight="@+id/mConfirm"
+        android:layout_alignEnd="@+id/mConfirm"
+        android:layout_marginTop="12dp"
+        android:id="@+id/mAge"
+        android:hint="Age"
+        android:inputType="number|numberSigned"
+        android:layout_width="100dp"
+        android:background="@drawable/editext_style2"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/mCountry"
+        android:hint="Country"
+        android:background="@drawable/editext_style2"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignBaseline="@+id/mAge"
+        android:layout_alignBottom="@+id/mAge"
+        android:layout_alignLeft="@+id/mConfirm"
+        android:layout_alignStart="@+id/mConfirm" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/mAge"
+        android:layout_alignLeft="@+id/mCountry"
+        android:layout_alignStart="@+id/mCountry"
+        android:layout_marginTop="15dp"
+        android:id="@+id/mgender"
+        android:hint="Gender"
+        android:textAlignment="center"
+        android:background="@drawable/editext_style2"
+        android:fontFamily="sans-serif-condensed" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignTop="@+id/mgender"
+        android:layout_alignLeft="@+id/mAge"
+        android:layout_alignStart="@+id/mAge"
+        android:id="@+id/mSocialStatus"
+        android:hint="Social"
+        android:background="@drawable/edittext_style"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mList"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mgender"
+            android:layout_alignStart="@+id/mgender"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:onClick="Register"/>
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnRegister"
+            android:layout_toRightOf="@+id/btnRegister"
+            android:layout_toEndOf="@+id/btnRegister"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:id="@+id/mCancel"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape"
+            android:onClick="Cancel"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="200dp"
+        android:id="@+id/mList"
+        android:layout_below="@+id/mgender"
+        android:layout_alignLeft="@+id/mgender"
+        android:layout_alignStart="@+id/mgender"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@+id/mSocialStatus"
+        android:layout_alignEnd="@+id/mSocialStatus" />
+
+</RelativeLayout>

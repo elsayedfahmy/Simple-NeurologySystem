@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.mahmoudashraf.neurologysystem.Activites.homeAvtivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+       >
+
+    <Button
+        android:text="Consulting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/btnConsulting"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:background="@drawable/button_shape"
+        android:textSize="24sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="done_consulte"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        />
+
+    <Button
+        android:text="Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnProfile"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:background="@drawable/button_shape"
+        android:textSize="24sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="profile"
+        android:paddingLeft="60dp"
+        android:paddingRight="40dp"
+        />
+    <Button
+        android:text="Admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnAdmin"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:background="@drawable/button_shape"
+        android:textSize="24sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="admin"
+        android:paddingLeft="60dp"
+        android:paddingRight="40dp"
+        />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
